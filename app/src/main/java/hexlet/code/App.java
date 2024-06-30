@@ -23,6 +23,10 @@ while (true){
             System.out.println("Your choice: 5");
             Cli.next();
             Progression.game5();
+        } else if (command == 6) {
+            System.out.println("Your choice: 6");
+            Cli.next();
+            Prime.game6();
         }else if ( command == 0) {
             System.out.println("Your choice: 0");
             System.out.println("Exit");
@@ -39,6 +43,7 @@ static  void printMenu (){
     System.out.println("3 - Calc");
     System.out.println("4 - GCD");
     System.out.println("5 - Progression");
+    System.out.println("6 - Prime");
     System.out.println("0 - Exit");
     System.out.println("Welcome to the Brain Games!");
     Cli.next();
