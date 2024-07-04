@@ -12,6 +12,7 @@ public class App {
             case 1:
                 System.out.println("Your choice: 1");
                 Cli.next();
+                break;
             case 2:
                 System.out.println("Your choice: 2");
                 Even.chetNotchet();
@@ -53,8 +54,8 @@ public class App {
             System.out.println("5 - Progression");
             System.out.println("6 - Prime");
             System.out.println("0 - Exit");
-            System.out.println("Welcome to the Brain Games!");
-            Cli.next();
+
+
         }
     }
 
