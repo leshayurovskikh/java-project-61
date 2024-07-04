@@ -1,4 +1,5 @@
-package hexlet.code;
+package hexlet.code.games;
+
 import java.util.Scanner;
 
 public class Even {
@@ -40,5 +41,4 @@ public class Even {
         }
         System.out.println("Congratulations, "+Cli.userName+"!");
     }
-}
 }

@@ -1,4 +1,6 @@
-package hexlet.code;
+package hexlet.code.games;
+import hexlet.code.Engine;
+
 import java.util.Scanner;
 
 import static hexlet.code.Engine.gcd;
@@ -14,8 +16,8 @@ System.out.println("Your answer:");
     if (gcd()==answer){
         System.out.println("Correct!");
     }else{
-        System.out.println(answer+ "is wrong answer ;(. Correct answer was "+gcd()+"."+\n +
-                "Let's try again, "+Cli.userName+"!");
+        System.out.println(answer+ "is wrong answer ;(. Correct answer was "+gcd()+"."+  +
+                "Let's try again, "+ Cli.userName +"!");
     }
 }
 }
