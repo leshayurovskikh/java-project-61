@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Even {
     public static void chetNotchet() {
+        String user = Cli.next();
         Scanner scanner = new Scanner(System.in);
         Cli.next();
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
@@ -14,7 +15,7 @@ public class Even {
             System.out.println("Correct");
         } else {
             System.out.println("'yes' is wrong answer ;(. Correct answer was 'no'.\n" +
-                    "Let's try again, " + Cli.userName);
+                    "Let's try again, " + user);
 
         }
         System.out.println("Question: 6");
@@ -25,7 +26,7 @@ public class Even {
             System.out.println("Correct");
         }else{
             System.out.println("'no' is wrong answer ;(. Correct answer was 'yes'.\n" +
-                    "Let's try again, " + Cli.userName);
+                    "Let's try again, " + user);
         }
         System.out.println("Question: 7");
         System.out.println("Your answer:");
@@ -35,8 +36,8 @@ public class Even {
             System.out.println("Correct");
         }else{
             System.out.println("'yes' is wrong answer ;(. Correct answer was 'no'.\n" +
-                    "Let's try again, " + Cli.userName);
+                    "Let's try again, " + user);
         }
-        System.out.println("Congratulations, "+Cli.userName+"!");
+        System.out.println("Congratulations, "+user+"!");
     }
 }

@@ -23,17 +23,14 @@ public class App {
                 break;
             case 4:
                 System.out.println("Your choice: 4");
-                Cli.next();
                 Gcd.game4();
                 break;
             case 5:
                 System.out.println("Your choice: 5");
-                Cli.next();
                 Progression.game5();
                 break;
             case 6:
                 System.out.println("Your choice: 6");
-                Cli.next();
                 Prime.game6();
                 break;
             case 0:

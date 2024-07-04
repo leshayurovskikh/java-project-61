@@ -1,11 +1,12 @@
 package hexlet.code.games;
 import hexlet.code.Engine;
+import hexlet.code.games.Cli;
 
 import java.util.Scanner;
 
 public class Calc {
     public static void calculator() {
-        Cli.next();
+        String user = Cli.next();
         int a = Engine.generateNumber();
         int b = Engine.generateNumber();
         System.out.println("What is the result of the expression ?");
@@ -19,7 +20,7 @@ public class Calc {
             System.out.println("Correct!");
         }else{
             System.out.println(answer+" is wrong answer ;(. Correct answer was + "+sum+".\n" +
-                    "Let's try again, "+Cli.userName+"!");
+                    "Let's try again, "+user+"!");
 
         }
         int c = Engine.generateNumber();
@@ -34,7 +35,7 @@ public class Calc {
             System.out.println("Correct!");
         }else{
             System.out.println(answer1+" is wrong answer ;(. Correct answer was + "+sum1+".\n" +
-                    "Let's try again, "+Cli.userName+"!");
+                    "Let's try again, "+user+"!");
 
         }
         int e = Engine.generateNumber();
@@ -50,9 +51,9 @@ public class Calc {
 
         } else {
             System.out.println(answer2+" is wrong answer ;(. Correct answer was + "+sum2+".\n" +
-                    "Let's try again, "+Cli.userName+"!");
+                    "Let's try again, "+user+"!");
         }
-        System.out.println("Congratulations, "+Cli.userName+"!");
+        System.out.println("Congratulations, "+user+"!");
     }
 
 }
