@@ -2,8 +2,7 @@ package hexlet.code;
 import java.util.Random;
 public class Engine {
     public static int generateNumber() {
-        int x = (int) (Math.random() * 100);
-        return x;
+        return (int) (Math.random() * 100);
     }
     public int agcd = Engine.generateNumber();
     int bgcd = Engine.generateNumber();

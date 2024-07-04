@@ -8,15 +8,18 @@ import static hexlet.code.Engine.gcd;
 public class Gcd {
     public static void game4(){
     System.out.println("Find the greatest common divisor of given numbers.");
-System.out.println("Question:" + Engine.generateNumber() + ""+Engine.gcd());
+    int x = Engine.generateNumber();
+    int y = Engine.generateNumber();
+System.out.println("Question:" + x + ""+ y);
 System.out.println("Your answer:");
     Scanner scanner = new Scanner(System.in);
     int answer = scanner.nextInt();
     System.out.println("Your answer: "+ answer);
-    if (gcd()==answer){
+    int a =Engine.gcd(x, y);
+    if (a==answer){
         System.out.println("Correct!");
     }else{
-        System.out.println(answer+ "is wrong answer ;(. Correct answer was "+gcd()+"."+  +
+        System.out.println(answer+ "is wrong answer ;(. Correct answer was "+a+"."+
                 "Let's try again, "+ Cli.userName +"!");
     }
 }

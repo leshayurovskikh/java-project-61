@@ -20,7 +20,7 @@ public class Calc {
         }else{
             System.out.println(answer+" is wrong answer ;(. Correct answer was + "+sum+".\n" +
                     "Let's try again, "+Cli.userName+"!");
-            break;
+
         }
         int c = Engine.generateNumber();
         int d = Engine.generateNumber();
@@ -35,7 +35,7 @@ public class Calc {
         }else{
             System.out.println(answer1+" is wrong answer ;(. Correct answer was + "+sum1+".\n" +
                     "Let's try again, "+Cli.userName+"!");
-            break;
+
         }
         int e = Engine.generateNumber();
         int f = Engine.generateNumber();
@@ -51,7 +51,6 @@ public class Calc {
         } else {
             System.out.println(answer2+" is wrong answer ;(. Correct answer was + "+sum2+".\n" +
                     "Let's try again, "+Cli.userName+"!");
-            break;
         }
         System.out.println("Congratulations, "+Cli.userName+"!");
     }

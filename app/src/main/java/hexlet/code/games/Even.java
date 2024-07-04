@@ -15,7 +15,7 @@ public class Even {
         } else {
             System.out.println("'yes' is wrong answer ;(. Correct answer was 'no'.\n" +
                     "Let's try again, " + Cli.userName);
-            break;
+
         }
         System.out.println("Question: 6");
         System.out.println("Your answer:");
@@ -26,7 +26,6 @@ public class Even {
         }else{
             System.out.println("'no' is wrong answer ;(. Correct answer was 'yes'.\n" +
                     "Let's try again, " + Cli.userName);
-            break;
         }
         System.out.println("Question: 7");
         System.out.println("Your answer:");
@@ -37,7 +36,6 @@ public class Even {
         }else{
             System.out.println("'yes' is wrong answer ;(. Correct answer was 'no'.\n" +
                     "Let's try again, " + Cli.userName);
-            break;
         }
         System.out.println("Congratulations, "+Cli.userName+"!");
     }
