@@ -1,5 +1,5 @@
 package hexlet.code.games;
-import hexlet.code.Engine;
+import hexlet.code.Utils;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -11,7 +11,7 @@ public class Prime {
         System.out.println("Question: " + rondom);
         Scanner scanner = new Scanner(System.in);
         String answer = scanner.next();
-        boolean s = Engine.isSimple(rondom);
+        boolean s = Utils.isSimple(rondom);
         if (s == true & answer.equals("yes")) {
             System.out.println("Correct!");
         } else if (s == false & answer.equals("no")) {

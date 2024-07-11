@@ -19,7 +19,7 @@ public class App {
                 break;
             case 3:
                 System.out.println("Your choice: 3");
-                Calc.calculator();
+                Calc.run();
                 break;
             case 4:
                 System.out.println("Your choice: 4");

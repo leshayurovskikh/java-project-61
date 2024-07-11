@@ -1,31 +1,42 @@
 package hexlet.code;
-import java.util.Random;
-public class Engine {
-    public static int generateNumber() {
-        return (int) (Math.random() * 100);
-    }
-    public int agcd = Engine.generateNumber();
-    int bgcd = Engine.generateNumber();
-   public int getAgcd(int agcd){
-       return agcd;
-   }
 
-        public static int gcd ( int agcd, int bgcd){
-        while (bgcd != 0) {
-            int tmp = agcd % bgcd;
-            agcd = bgcd;
-            bgcd = tmp;
-        }
-        return agcd;
+import java.util.Scanner;
+
+public class Engine {
+    public static boolean checkAnswer(String userAnswer, String correctAnswer){
+        return userAnswer.equals (correctAnswer);
     }
-    public static boolean isSimple(int number) {
-        if(number < 2) return false;
-        for(int i = 2; i <= number / 2; i++) {
-            if(number % i == 0) {
-                return false;
-            }
-        }
-        return true;
+    public static void correctAnswer(){
+        System.out.println ("Correct" );
     }
+    public static void wrongAnswer(String userName, String correctAnswer, String userAnswer){
+        System.out.println (userAnswer+ " is wrong answer ;(. Correct answer was "+correctAnswer+".");
+        System.out.println ("Let's try again, " + userName + "!" );
     }
+    public static String getUserName(){
+        System.out.println ("Welcome to the Brain Games!");
+        System.out.println ("May I have your name?");
+        Scanner scanner = new Scanner (System.in);
+        String userName = scanner.next ();
+        System.out.println ("Hello, "+userName);
+        return userName;
+    }
+    public static String getSumNumber(int a, int b){
+        int sum = a+b;
+        return preparation (sum);
+    }
+    public static String getSubtrNumber(int a, int b){
+        int subtr = a-b;
+        return preparation (subtr);
+    }
+    public static String getMultNumber (int a, int b){
+        int mult = a*b;
+        return preparation (mult);
+    }
+
+    public static String preparation(int sum){
+        return Integer. toString (sum);
+    }
+
+}
 

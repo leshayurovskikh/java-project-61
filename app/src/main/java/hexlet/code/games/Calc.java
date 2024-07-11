@@ -1,59 +1,60 @@
 package hexlet.code.games;
 import hexlet.code.Engine;
+import hexlet.code.Utils;
 import hexlet.code.games.Cli;
 
 import java.util.Scanner;
 
+import static hexlet.code.Utils.getRandomint;
+
 public class Calc {
-    public static void calculator() {
-        String user = Cli.next();
-        int a = Engine.generateNumber();
-        int b = Engine.generateNumber();
-        System.out.println("What is the result of the expression ?");
-        System.out.println("Question: " + a +" * "+ b);
-        System.out.println("Your answer:");
-        Scanner scanner = new Scanner(System.in);
-        int answer = scanner.nextInt();
-        System.out.println("Your answer: "+answer);
-        int sum = a*b;
-        if (answer==sum){
-            System.out.println("Correct!");
-        }else{
-            System.out.println(answer+" is wrong answer ;(. Correct answer was + "+sum+".\n" +
-                    "Let's try again, "+user+"!");
-
+    public static String generateOperations() {
+        int generate = Utils.getRandomint (1, 3);
+        String result = "";
+        if (generate == 1) {
+            result = "+";
+        } else if (generate == 2) {
+            result = "-";
+        } else if (generate == 3) {
+            result = "*";
         }
-        int c = Engine.generateNumber();
-        int d = Engine.generateNumber();
-        int sum1 = c+d;
-        System.out.println("What is the result of the expression?");
-        System.out.println("Question: " + c +" + "+ d);
-        System.out.println("Your answer:");
-        int answer1 = scanner.nextInt();
-        System.out.println("Your answer: "+answer1);
-        if (answer1==sum1){
-            System.out.println("Correct!");
-        }else{
-            System.out.println(answer1+" is wrong answer ;(. Correct answer was + "+sum1+".\n" +
-                    "Let's try again, "+user+"!");
-
+        return result;
+    }
+    public static String questions(String result, int a, int b){
+        switch (result){
+            case "+":
+                System.out.println ("What is the result of the expression?" );
+                System.out.println ("Question: " + a + " + " + b);
+                return Engine.getSumNumber (a,b);
+            case  "-":
+                System.out.println ("What is the result of the expression?" );
+                System.out.println ("Question: " + a + " - " + b );
+                return Engine.getSubtrNumber(a, b);
+            case "*":
+                System.out.println ("What is the result of the expression?" );
+                System.out.println ("Question: " + a + " * " + b );
+                return Engine.getMultNumber (a, b);
         }
-        int e = Engine.generateNumber();
-        int f = Engine.generateNumber();
-        int sum2 = e-f;
-        System.out.println("What is the result of the expression?");
-        System.out.println("Question: " + e +" - "+ f);
-        System.out.println("Your answer:");
-        int answer2 = scanner.nextInt();
-        System.out.println("Your answer: "+answer2);
-        if (answer1==sum1) {
-            System.out.println("Correct!");
+        return result;
+    }
+    static String userName = Engine.getUserName ();
+    public static void run(){
+        for (int i = 0; i < 3; i++) {
 
-        } else {
-            System.out.println(answer2+" is wrong answer ;(. Correct answer was + "+sum2+".\n" +
-                    "Let's try again, "+user+"!");
+            int a = Utils.getRandomint (1,10);
+            int b = Utils.getRandomint (1,10);
+            String result = generateOperations ();
+            String correctAnswer =  questions (result, a, b);
+            Scanner scanner = new Scanner (System.in);
+            String userAnswer = scanner.next ();
+            System.out.println ("Your answer: " + userAnswer );
+            boolean checkResult = Engine.checkAnswer (userAnswer, correctAnswer);
+            if (checkResult==true){
+                Engine.correctAnswer();
+            }else{
+                Engine.wrongAnswer (userName, correctAnswer, userAnswer);
+            }
         }
-        System.out.println("Congratulations, "+user+"!");
     }
 
 }
