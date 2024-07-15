@@ -1,43 +1,21 @@
 package hexlet.code.games;
-
-import java.util.Scanner;
+import hexlet.code.Engine;
+import hexlet.code.Utils;
 
 public class Even {
-    public static void chetNotchet() {
-        String user = Cli.next();
-        Scanner scanner = new Scanner(System.in);
-        Cli.next();
-        System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
-        System.out.println("Question: 15");
-        String q1 = scanner.next();
-        System.out.println("Your answer: "+q1);
-        if (q1.equals("no")) {
-            System.out.println("Correct");
-        } else {
-            System.out.println("'yes' is wrong answer ;(. Correct answer was 'no'.\n" +
-                    "Let's try again, " + user);
-
+    public static void run() {
+        var questions = new String [3][];
+        for (int i = 0; i < 3; i++) {
+            questions[i]= generateRound ();
         }
-        System.out.println("Question: 6");
-        System.out.println("Your answer:");
-        String q2 = scanner.next();
-        System.out.println("Your answer: "+q2);
-        if (q2.equals("yes")){
-            System.out.println("Correct");
-        }else{
-            System.out.println("'no' is wrong answer ;(. Correct answer was 'yes'.\n" +
-                    "Let's try again, " + user);
-        }
-        System.out.println("Question: 7");
-        System.out.println("Your answer:");
-        String q3 = scanner.next();
-        System.out.println("Your answer: "+q3);
-        if(q3.equals("no")){
-            System.out.println("Correct");
-        }else{
-            System.out.println("'yes' is wrong answer ;(. Correct answer was 'no'.\n" +
-                    "Let's try again, " + user);
-        }
-        System.out.println("Congratulations, "+user+"!");
+        Engine.metod (questions, "Answer 'yes' if the number is even, otherwise answer 'no'.");
     }
-}
+    public static String [] generateRound(){
+        int number = Utils.getRandomint (1,10);
+        var correctAnswer = isEven (number) ? "yes":"no";
+        return new String[]{String.valueOf (number), String.valueOf (correctAnswer)};
+    }
+    public static boolean isEven (int number){
+        return number%2==0;
+    }
+    }

@@ -15,7 +15,7 @@ public class App {
                 break;
             case 2:
                 System.out.println("Your choice: 2");
-                Even.chetNotchet();
+                Even.run();
                 break;
             case 3:
                 System.out.println("Your choice: 3");
@@ -23,15 +23,15 @@ public class App {
                 break;
             case 4:
                 System.out.println("Your choice: 4");
-                Gcd.game4();
+                Gcd.run();
                 break;
             case 5:
                 System.out.println("Your choice: 5");
-                Progression.game5();
+                Progression.run();
                 break;
             case 6:
                 System.out.println("Your choice: 6");
-                Prime.game6();
+                Prime.run();
                 break;
             case 0:
                 System.out.println("Your choice: 0");

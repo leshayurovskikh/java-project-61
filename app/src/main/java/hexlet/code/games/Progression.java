@@ -1,24 +1,28 @@
 package hexlet.code.games;
-import java.util.Random;
-import java.util.Arrays;
-import java.util.Scanner;
+import hexlet.code.Engine;
+import hexlet.code.Utils;
+
 public class Progression {
-    public  static void game5 (){
-        String user = Cli.next();
-       System.out.println ("What number is missing in the progression?");
-    int rondom = new Random().nextInt(5);
-    String[] array  = {"2", "4", "6", "8", "10"};
-    String c = array[rondom];
-    array[rondom]="..";
-        System.out.println (Arrays.toString (array));
-        System.out.println ("Ваш ответ?");
-    Scanner sc = new Scanner (System.in);
-    String answer = sc.next();
-if (answer.equals (c)){
-        System.out.println ("Correct");
-    }else {
-    System.out.println(answer+" is wrong answer ;(. Correct answer was " + c+".\n" +
-            "Let's try again, " + user);
+    public static void run() {
+        var questions = new String [3][];
+        for (int i = 0; i < 3; i++) {
+            questions[i]= generateRound ();
+        }
+        Engine.metod (questions, "Answer 'yes' if given number is prime. Otherwise answer 'no'.");
+
     }
-}
+    public static String [] generateRound(){
+        int number = Utils.getRandomint (1,10);
+        var correctAnswer = isSimple (number) ? "yes":"no";
+        return new String[]{String.valueOf (number), String.valueOf (correctAnswer)};
+    }
+    public static boolean isSimple(int number) {
+        if(number < 2) return false;
+        for(int i = 2; i <= number / 2; i++) {
+            if(number % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
 }

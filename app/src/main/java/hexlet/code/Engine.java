@@ -37,6 +37,21 @@ public class Engine {
     public static String preparation(int sum){
         return Integer. toString (sum);
     }
+    public static void metod(String[][]rounds, String rules){
+        Scanner scanner = new Scanner(System.in);
+        String userName = getUserName();
+        System.out.println (rules);
+        for (String[] round:rounds){
+            System.out.println ("question " + round[0] );
+            String answer = scanner.next ();
+            if (answer.equals (round[1])){
+                correctAnswer();
+            }else {
+                wrongAnswer (userName,String.valueOf (round[1]),answer );
+            }
+        }
+        System.out.println ("Game over" );
+    }
 
 }
 

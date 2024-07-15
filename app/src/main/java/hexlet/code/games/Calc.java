@@ -1,12 +1,7 @@
 package hexlet.code.games;
 import hexlet.code.Engine;
 import hexlet.code.Utils;
-import hexlet.code.games.Cli;
-
 import java.util.Scanner;
-
-import static hexlet.code.Utils.getRandomint;
-
 public class Calc {
     public static String generateOperations() {
         int generate = Utils.getRandomint (1, 3);
@@ -56,5 +51,4 @@ public class Calc {
             }
         }
     }
-
 }

@@ -1,22 +1,28 @@
 package hexlet.code.games;
+import hexlet.code.Engine;
 import hexlet.code.Utils;
 
-import java.util.Random;
-import java.util.Scanner;
 public class Prime {
-    public static void game6() {
-        String user = Cli.next();
-        System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
-        int rondom = new Random().nextInt();
-        System.out.println("Question: " + rondom);
-        Scanner scanner = new Scanner(System.in);
-        String answer = scanner.next();
-        boolean s = Utils.isSimple(rondom);
-        if (s == true & answer.equals("yes")) {
-            System.out.println("Correct!");
-        } else if (s == false & answer.equals("no")) {
-            System.out.println("'no' is wrong answer ;(. Correct answer was 'yes'.\n" +
-                    "Let's try again, " + user);
+    public static void run() {
+        var questions = new String [3][];
+        for (int i = 0; i < 3; i++) {
+            questions[i]= generateRound ();
         }
+        Engine.metod (questions, "Answer 'yes' if given number is prime. Otherwise answer 'no'.");
+
+    }
+    public static String [] generateRound(){
+        int number = Utils.getRandomint (1,10);
+        var correctAnswer = isSimple (number) ? "yes":"no";
+        return new String[]{String.valueOf (number), String.valueOf (correctAnswer)};
+    }
+    public static boolean isSimple(int number) {
+        if(number < 2) return false;
+        for(int i = 2; i <= number / 2; i++) {
+            if(number % i == 0) {
+                return false;
+            }
+        }
+        return true;
     }
 }
