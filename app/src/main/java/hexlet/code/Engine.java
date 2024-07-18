@@ -21,19 +21,6 @@ public class Engine {
         System.out.println ("Hello, "+userName);
         return userName;
     }
-    public static String getSumNumber(int a, int b){
-        int sum = a+b;
-        return preparation (sum);
-    }
-    public static String getSubtrNumber(int a, int b){
-        int subtr = a-b;
-        return preparation (subtr);
-    }
-    public static String getMultNumber (int a, int b){
-        int mult = a*b;
-        return preparation (mult);
-    }
-
     public static String preparation(int sum){
         return Integer. toString (sum);
     }
