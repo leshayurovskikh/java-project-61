@@ -42,7 +42,7 @@ public class Engine {
         String userName = getUserName();
         System.out.println (rules);
         for (String[] round:rounds){
-            System.out.println ("question " + round[0] );
+            System.out.println ("Question: " + round[0] );
             String answer = scanner.next ();
             if (answer.equals (round[1])){
                 correctAnswer();
