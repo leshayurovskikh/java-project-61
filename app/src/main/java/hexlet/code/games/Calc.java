@@ -3,64 +3,37 @@ import hexlet.code.Engine;
 import hexlet.code.Utils;
 import java.util.Scanner;
 public class Calc {
+    public static void run() {
+        var questions = new String [3][];
+        for (int i = 0; i < 3; i++) {
+            questions[i]= generateRound ();
+        }
+        Engine.metod (questions, "What is the result of the expression?");
+    }
+    public static String [] generateRound(){
+        int a = Utils.getRandomint (1,10);
+        int b = Utils.getRandomint (1,10);
+        String result = generateOperations();
+        int sum = 0;
+        if (result.equals (" + ")) {
+            sum = a + b;
+        }else if (result.equals(" - ")){
+            sum = a-b;
+        }else if (result.equals(" * ")){
+            sum = a*b;
+        }
+        return new String[]{String.valueOf (a+result+b), String.valueOf (sum)};
+    }
     public static String generateOperations() {
         int generate = Utils.getRandomint (1, 3);
         String result = "";
         if (generate == 1) {
-            result = "+";
+            result = " + ";
         } else if (generate == 2) {
-            result = "-";
+            result = " - ";
         } else if (generate == 3) {
-            result = "*";
+            result = " * ";
         }
         return result;
-    }
-    public static String questions(String result, int a, int b){
-        switch (result){
-            case "+":
-                System.out.println ("What is the result of the expression?" );
-                System.out.println ("Question: " + a + " + " + b);
-                return getSumNumber (a,b);
-            case  "-":
-                System.out.println ("What is the result of the expression?" );
-                System.out.println ("Question: " + a + " - " + b );
-                return getSubtrNumber(a, b);
-            case "*":
-                System.out.println ("What is the result of the expression?" );
-                System.out.println ("Question: " + a + " * " + b );
-                return getMultNumber (a, b);
-        }
-        return result;
-    }
-    static String userName = Engine.getUserName ();
-    public static void run(){
-        for (int i = 0; i < 3; i++) {
-
-            int a = Utils.getRandomint (1,10);
-            int b = Utils.getRandomint (1,10);
-            String result = generateOperations ();
-            String correctAnswer =  questions (result, a, b);
-            Scanner scanner = new Scanner (System.in);
-            String userAnswer = scanner.next ();
-            System.out.println ("Your answer: " + userAnswer );
-            boolean checkResult = Engine.checkAnswer (userAnswer, correctAnswer);
-            if (checkResult==true){
-                Engine.correctAnswer();
-            }else{
-                Engine.wrongAnswer (userName, correctAnswer, userAnswer);
-            }
-        }
-    }
-     public static String getSumNumber(int a, int b){
-        int sum = a+b;
-        return preparation (sum);
-    }
-    public static String getSubtrNumber(int a, int b){
-        int subtr = a-b;
-        return preparation (subtr);
-    }
-    public static String getMultNumber (int a, int b){
-        int mult = a*b;
-        return preparation (mult);
     }
 }
