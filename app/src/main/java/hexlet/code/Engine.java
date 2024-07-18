@@ -50,7 +50,7 @@ public class Engine {
                 wrongAnswer (userName,String.valueOf (round[1]),answer );
             }
         }
-        System.out.println ("Game over" );
+        System.out.println ("Congratulations, "+userName+"!" );
     }
 
 }
