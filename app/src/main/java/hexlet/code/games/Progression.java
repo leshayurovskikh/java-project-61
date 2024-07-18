@@ -4,7 +4,7 @@ import hexlet.code.Utils;
 import java.util.Arrays;
 
 public class Progression {
-   public static void run() {
+    public static void run() {
         var questions = new String [3][];
         for (int i = 0; i < 3; i++) {
             questions[i]= generateRound ();
@@ -14,26 +14,21 @@ public class Progression {
     }
     public static String [] generateRound(){
         int number = Utils.getRandomint (1,4);
-        String array  = getStringMas();
-        String[] words = array.split(",");
+        String[] words = getStringMas();
         String c = words[number];
         words[number]="..";
 
         return new String[]{String.valueOf (Arrays.toString (words)), String.valueOf (c)};
     }
-public static String getStringMas (){
-    int a = Utils.getRandomint (1,3);
-    String mas = "";
-    if (a==1){
-        mas = "2,4,6,8,10";
-
-    } else if (a==2) {
-        mas = "4,6,8,10,12";
-
-    } else if (a==3) {
-        mas = "3,6,9,12,15";
-
+public static String[] getStringMas (){
+    String[] array = new String[Utils.getRandomint (5,10)];
+    int step = 0;
+    int z = Utils.getRandomint (1,10);
+    int sum = 0;
+    for (int i = step; i < array.length; i++) {
+        sum = i*z;
+        array[i] = Integer.toString (sum);
     }
-    return mas;
+    return array;
 }
 }
