@@ -48,7 +48,7 @@ public class Engine {
                 correctAnswer();
             }else {
                 wrongAnswer (userName,String.valueOf (round[1]),answer );
-                System.out.println("Let's try again, "+ userName+"!");
+              
             }
         }
         System.out.println ("Congratulations, "+userName+"!" );
