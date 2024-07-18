@@ -20,15 +20,15 @@ public class Calc {
             case "+":
                 System.out.println ("What is the result of the expression?" );
                 System.out.println ("Question: " + a + " + " + b);
-                return Engine.getSumNumber (a,b);
+                return getSumNumber (a,b);
             case  "-":
                 System.out.println ("What is the result of the expression?" );
                 System.out.println ("Question: " + a + " - " + b );
-                return Engine.getSubtrNumber(a, b);
+                return getSubtrNumber(a, b);
             case "*":
                 System.out.println ("What is the result of the expression?" );
                 System.out.println ("Question: " + a + " * " + b );
-                return Engine.getMultNumber (a, b);
+                return getMultNumber (a, b);
         }
         return result;
     }
@@ -50,5 +50,17 @@ public class Calc {
                 Engine.wrongAnswer (userName, correctAnswer, userAnswer);
             }
         }
+    }
+     public static String getSumNumber(int a, int b){
+        int sum = a+b;
+        return preparation (sum);
+    }
+    public static String getSubtrNumber(int a, int b){
+        int subtr = a-b;
+        return preparation (subtr);
+    }
+    public static String getMultNumber (int a, int b){
+        int mult = a*b;
+        return preparation (mult);
     }
 }
