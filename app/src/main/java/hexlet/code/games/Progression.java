@@ -21,13 +21,15 @@ public class Progression {
         return new String[]{String.valueOf (Arrays.toString (words)), String.valueOf (c)};
     }
 public static String[] getStringMas (){
-    String[] array = new String[Utils.getRandomint (5,10)];
-    int step = 0;
+    int sequenceSize = Utils.getRandomint (5,10); //размер последовательности
+    int firstNumber = 1; // первое число
+    int step = 5; // шаг
+    String[] array = new String[sequenceSize];
     int z = Utils.getRandomint (1,10);
     int sum = 0;
-    for (int i = step; i < array.length; i++) {
+    for (int i = 0; i < array.length; i++) {
         sum = i*z;
-        array[i] = Integer.toString (sum);
+        array[i] = Integer.toString (firstNumber+step*i);
     }
     return array;
 }
