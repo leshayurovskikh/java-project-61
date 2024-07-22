@@ -16,9 +16,9 @@ public class Prime {
         var correctAnswer = isSimple (number) ? "yes":"no";
         return new String[]{String.valueOf (number), String.valueOf (correctAnswer)};
     }
-    public static boolean isSimple(int number) {
+   public static boolean isSimple(int number) {
         if(number < 2) return false;
-        for(int i = 2; i <= number / 2; i++) {
+        for(int i = 2; i <= Math.sqrt (number); i++) {
             if(number % i == 0) {
                 return false;
             }
