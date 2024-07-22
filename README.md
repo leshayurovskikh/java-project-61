@@ -24,24 +24,24 @@
 
 - Приветствие
 
-![Снимок1](https://github.com/user-attachments/assets/daa44c84-ef34-4228-a31e-0d4e9aa84cb1)
+<img alt="Снимок1" height="300" src="https://github.com/user-attachments/assets/daa44c84-ef34-4228-a31e-0d4e9aa84cb1" width="400"/>
 
 - Проверка на чётность
 
-![Снимок2](https://github.com/user-attachments/assets/81011377-1ff0-481b-837f-27fb7aa2a0a9)
+<img alt="Снимок2" height="300" src="https://github.com/user-attachments/assets/81011377-1ff0-481b-837f-27fb7aa2a0a9" width="400"/>
 
 - Калькулятор
 
-![Снимок3](https://github.com/user-attachments/assets/aa00fa57-55e4-4ca9-b8d6-329cd6130a59)
+<img alt="Снимок3" height="300" src="https://github.com/user-attachments/assets/aa00fa57-55e4-4ca9-b8d6-329cd6130a59" width="400"/>
 
 - НОД
 
-![Снимок4](https://github.com/user-attachments/assets/291ab415-11b4-4561-a305-725a47151780)
+<img alt="Снимок4" height="300" src="https://github.com/user-attachments/assets/291ab415-11b4-4561-a305-725a47151780" width="400"/>
 
 - Арифмитическая прогрессия
 
-![Снимок5](https://github.com/user-attachments/assets/7328cbcc-07d5-4fc4-9aeb-e66522c6d81d)
+<img alt="Снимок5" height="300" src="https://github.com/user-attachments/assets/7328cbcc-07d5-4fc4-9aeb-e66522c6d81d" width="400"/>
 
 - Простое ли число?
 
-![Снимок6](https://github.com/user-attachments/assets/0c999b7b-7118-403a-9f5a-c6baeb6ec2a8)
+<img alt="Снимок6" height="300" src="https://github.com/user-attachments/assets/0c999b7b-7118-403a-9f5a-c6baeb6ec2a8" width="400"/>
