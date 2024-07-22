@@ -13,7 +13,7 @@ public class Calc {
     public static String [] generateRound(){
         int a = Utils.getRandomint (1,10);
         int b = Utils.getRandomint (1,10);
-        String result = generateOperations();
+        String result = String.valueOf (generateOperations());
         int sum = 0;
         if (result.equals (" + ")) {
             sum = a + b;
