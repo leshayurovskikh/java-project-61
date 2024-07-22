@@ -20,6 +20,12 @@
 6. "Простое ли число?" ([ссылка](https://github.com/user-attachments/assets/4fdc5cef-0f02-4ac9-a0be-fae3d77097e4 "Prime"))
 
 ----
-Примеры:
-- Cli
-  https://github.com/user-attachments/assets/cf674776-9b6f-40df-95c6-36eba4dc3f11 "Greet"
+**Примеры:**
+
+- Приветствие
+
+![Greet](https://github.com/user-attachments/assets/cb9236a8-a4a5-4fc4-b544-9c3a9b646681)
+
+- Проверка на чётность
+
+![Even](https://github.com/user-attachments/assets/58ff874f-e9c6-4425-9e45-75eb670094fd)
