@@ -24,8 +24,24 @@
 
 - Приветствие
 
-![Greet](https://github.com/user-attachments/assets/cb9236a8-a4a5-4fc4-b544-9c3a9b646681)
+![Снимок1](https://github.com/user-attachments/assets/daa44c84-ef34-4228-a31e-0d4e9aa84cb1)
 
 - Проверка на чётность
 
-![Even](https://github.com/user-attachments/assets/58ff874f-e9c6-4425-9e45-75eb670094fd)
+![Снимок2](https://github.com/user-attachments/assets/81011377-1ff0-481b-837f-27fb7aa2a0a9)
+
+- Калькулятор
+
+![Снимок3](https://github.com/user-attachments/assets/aa00fa57-55e4-4ca9-b8d6-329cd6130a59)
+
+- НОД
+
+![Снимок4](https://github.com/user-attachments/assets/291ab415-11b4-4561-a305-725a47151780)
+
+- Арифмитическая прогрессия
+
+![Снимок5](https://github.com/user-attachments/assets/7328cbcc-07d5-4fc4-9aeb-e66522c6d81d)
+
+- Простое ли число?
+
+![Снимок6](https://github.com/user-attachments/assets/0c999b7b-7118-403a-9f5a-c6baeb6ec2a8)
