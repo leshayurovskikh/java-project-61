@@ -22,4 +22,4 @@
 ----
 Примеры:
 - Cli
-  [!ссылка](https://github.com/user-attachments/assets/cf674776-9b6f-40df-95c6-36eba4dc3f11 "Greet")
+  https://github.com/user-attachments/assets/cf674776-9b6f-40df-95c6-36eba4dc3f11 "Greet"
