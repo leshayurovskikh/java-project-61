@@ -1,4 +1,5 @@
 ![Actions Status](https://github.com/leshayurovskikh/java-project-61/actions/workflows/hexlet-check.yml/badge.svg)
+<a href="https://codeclimate.com/github/leshayurovskikh/java-project-61/maintainability"><img src="https://api.codeclimate.com/v1/badges/c1ade51d3960e9dbd89f/maintainability" /></a>
 # **Игры разума**
 
 ---
