@@ -11,7 +11,7 @@ public class Even {
         Engine.metod (questions, "Answer 'yes' if the number is even, otherwise answer 'no'.");
     }
     public static String [] generateRound(){
-        int number = Utils.getRandomint (1,10);
+        int number = Utils.getRandomint (1,50);
         var correctAnswer = isEven (number) ? "yes":"no";
         return new String[]{String.valueOf (number), String.valueOf (correctAnswer)};
     }
