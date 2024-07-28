@@ -10,23 +10,28 @@ public class Calc {
         }
         Engine.metod (questions, "What is the result of the expression?");
     }
-    public static String [] generateRound(){
-        int a = Utils.getRandomint (1,10);
-        int b = Utils.getRandomint (1,10);
-        String result = String.valueOf (generateOperations());
-        int sum = 0;
-        if (result.equals (" + ")) {
-            sum = a + b;
-        }else if (result.equals(" - ")){
-            sum = a-b;
-        }else if (result.equals(" * ")){
-            sum = a*b;
-        }
-        return new String[]{String.valueOf (a+result+b), String.valueOf (sum)};
+   public static String[] generateRound() {
+        int a = Utils.getRandomint (1, 10);
+        int b = Utils.getRandomint (1, 10);
+        char[] myArray = new char[] {'-', '+', '*'};
+        String operand = String.valueOf (myArray[(Utils.getRandomint(0,myArray.length))]);
+
+        String question = Integer.toString (a)+" "+operand+" "+Integer.toString (b);
+        String res = String.valueOf (generateOperations (a,b,operand));
+        return new String[]{String.valueOf (question), String.valueOf (res)};
+
     }
-     public static Character generateOperations() {
-        int generate = Utils.getRandomint (0, 2);
-       Character[] myArray = new Character [] {'-','+','*'};
-        return myArray[generate];
+
+    public static int generateOperations(int one, int two, String operand) {
+        int result = 0;
+        switch (operand) {
+            case "+":
+                return result = one + two;
+            case "-":
+               return result = one - two;
+            case "*":
+                return result = one * two;
+        }
+return result;
     }
 }
