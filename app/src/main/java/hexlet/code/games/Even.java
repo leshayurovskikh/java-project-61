@@ -11,11 +11,13 @@ public class Even {
         Engine.metod (questions, "Answer 'yes' if the number is even, otherwise answer 'no'.");
     }
     public static String [] generateRound(){
-        int number = Utils.getRandomint (1,50);
+        int minNumber = 1;
+        int maxNamber = 10;
+        int number = Utils.getRandomint (minNumber,maxNamber);
         var correctAnswer = isEven (number) ? "yes":"no";
         return new String[]{String.valueOf (number), String.valueOf (correctAnswer)};
     }
     public static boolean isEven (int number){
         return number%2==0;
     }
-    }
+}
