@@ -2,7 +2,6 @@ package hexlet.code.games;
 import hexlet.code.Engine;
 import hexlet.code.Utils;
 
-import java.util.Scanner;
 public class Gcd {
     public static void run() {
         var questions = new String [3][];
@@ -12,12 +11,14 @@ public class Gcd {
         Engine.metod (questions, "Find the greatest common divisor of given numbers.");
 
     }
+
     public static String [] generateRound(){
         int a = Utils.getRandomint (1,10);
         int b = Utils.getRandomint (1,10);
         int gcd =  gcd (a,b);
         return new String[]{String.valueOf (a + " "+ b), String.valueOf (gcd)};
     }
+
     public static int gcd(int a, int b) {
         return (a % b == 0) ? Math.abs(b) : gcd(b, a % b);
     }

@@ -4,10 +4,12 @@ import hexlet.code.games.*;
 import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter the game number and press Enter.");
         printMenu();
         int command = scanner.nextInt();
+
         switch (command) {
             case 1:
                 System.out.println("Your choice: 1");
@@ -42,7 +44,6 @@ public class App {
         }
     }
 
-
         static void printMenu () {
             System.out.println("1 - Greet");
             System.out.println("2 - Even");
@@ -51,8 +52,6 @@ public class App {
             System.out.println("5 - Progression");
             System.out.println("6 - Prime");
             System.out.println("0 - Exit");
-
-
         }
     }
 

@@ -2,6 +2,7 @@ package hexlet.code.games;
 import hexlet.code.Engine;
 import hexlet.code.Utils;
 import java.util.Scanner;
+
 public class Calc {
     public static void run() {
         var questions = new String [3][];
@@ -10,6 +11,7 @@ public class Calc {
         }
         Engine.metod (questions, "What is the result of the expression?");
     }
+
    public static String[] generateRound() {
         int a = Utils.getRandomint (1, 10);
         int b = Utils.getRandomint (1, 10);
@@ -19,7 +21,6 @@ public class Calc {
         String question = Integer.toString (a)+" "+operand+" "+Integer.toString (b);
         String res = String.valueOf (generateOperations (a,b,operand));
         return new String[]{String.valueOf (question), String.valueOf (res)};
-
     }
 
     public static int generateOperations(int one, int two, String operand) {

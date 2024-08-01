@@ -7,7 +7,7 @@ public class Engine {
         return userAnswer.equals (correctAnswer);
     }
     public static void correctAnswer(){
-        System.out.println ("Correct" );
+        System.out.println ("Correct!" );
     }
     public static void wrongAnswer(String userName, String correctAnswer, String userAnswer){
         System.out.println ("'"+userAnswer+"'"+ " is wrong answer ;(. Correct answer was "+"'"+correctAnswer+"'"+".");
@@ -18,7 +18,7 @@ public class Engine {
         System.out.println ("May I have your name?");
         Scanner scanner = new Scanner (System.in);
         String userName = scanner.next ();
-        System.out.println ("Hello, "+userName);
+        System.out.println ("Hello, "+userName+"!");
         return userName;
     }
     public static String preparation(int sum){

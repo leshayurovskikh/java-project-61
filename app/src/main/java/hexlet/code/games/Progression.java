@@ -4,6 +4,7 @@ import hexlet.code.Utils;
 import java.util.Arrays;
 
 public class Progression {
+
     public static void run() {
         var questions = new String [3][];
         for (int i = 0; i < 3; i++) {
@@ -12,6 +13,7 @@ public class Progression {
         Engine.metod (questions, "What number is missing in the progression?");
 
     }
+
    public static String [] generateRound(){
         int number = Utils.getRandomint (1,4);
         int sequenceSize = Utils.getRandomint (5,10); //размер последовательности
