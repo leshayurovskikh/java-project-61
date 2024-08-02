@@ -2,13 +2,12 @@ package hexlet.code;
 import java.util.Scanner;
 
 public class Engine {
-    public static void correctAnswer(){
-        System.out.println ("Correct!");
+    public static void correctAnswer() {
+        System.out.println("Correct!");
         }
-    
 public static void wrongAnswer(String userName, String correctAnswer, String userAnswer){
-    System.out.println ("'"+userAnswer+"'"+ " is wrong answer ;(. Correct answer was "+"'"+correctAnswer+"'"+".");
-    System.out.println ("Let's try again, " + userName + "!" );
+    System.out.println("'" + userAnswer + "'" + " is wrong answer ;(. Correct answer was " + "'" + correctAnswer + "'" + ".");
+    System.out.println("Let's try again, " + userName + "!");
     }
     
 public static String getUserName(){
