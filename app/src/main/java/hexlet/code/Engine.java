@@ -2,7 +2,6 @@ package hexlet.code;
 import java.util.Scanner;
 
 public class Engine {
-   
     public static void correctAnswer(){
         System.out.println ("Correct!" );
     }
