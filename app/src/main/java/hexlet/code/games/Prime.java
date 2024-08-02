@@ -3,6 +3,8 @@ import hexlet.code.Engine;
 import hexlet.code.Utils;
 
 public class Prime {
+public static final int MIN_NUMBER = 1;
+public static final int MAX_NUMBER = 10;
 
     public static void run() {
         int numberOfRounds = 3;
@@ -14,9 +16,7 @@ public class Prime {
     }
 
     public static String[] generateRound() {
-        int minNumber = 1;
-        int maxNumber = 10;
-        int number = Utils.getRandomint(minNumber, maxNumber);
+        int number = Utils.getRandomint(MIN_NUMBER, MAX_NUMBER);
         var correctAnswer = isSimple(number) ? "yes" : "no";
         return new String[]{String.valueOf(number), String.valueOf(correctAnswer)};
     }
