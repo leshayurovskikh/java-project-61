@@ -7,9 +7,9 @@ public static final int NUMBER_OF_ROUNDS = 3;
 public static final int FIRST_NUMBER = 1;  
 public static final int STEP = 5;    
 public static final int SEQ_MIN = 5; 
-public static final int SEQ_MAX = 5;
+public static final int SEQ_MAX = 10;
 public static final int MAX = 5;
-public static final int MIN = 5;    
+public static final int MIN = 1;    
     
     public static void run() {
         var questions = new String [NUMBER_OF_ROUNDS][];
@@ -20,7 +20,7 @@ public static final int MIN = 5;
     }
 
    public static String[] generateRound() {
-        int number = Utils.getRandomint(MAX, MIN);
+        int number = Utils.getRandomint(MIN, MAX);
         int sequenceSize = Utils.getRandomint(SEQ_MIN, SEQ_MAX);
         String[] words = getStringMas(sequenceSize, FIRST_NUMBER, STEP);
         String c = words[number];
