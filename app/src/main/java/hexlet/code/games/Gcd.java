@@ -3,11 +3,11 @@ import hexlet.code.Engine;
 import hexlet.code.Utils;
 
 public class Gcd {
-    
+
     public static void run() {
         var questions = new String[3][];
         for (int i = 0; i < 3; i++) {
-            questions[i]= generateRound();
+            questions[i] = generateRound();
         }
         Engine.metod(questions, "Find the greatest common divisor of given numbers.");
     }
