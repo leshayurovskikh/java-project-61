@@ -32,7 +32,7 @@ public class Engine {
                 correctAnswer();
             }else {
                 wrongAnswer (userName,String.valueOf (round[1]),answer );
-              break;
+              return;
             }
         }
         System.out.println ("Congratulations, "+userName+"!" );
