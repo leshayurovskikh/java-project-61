@@ -5,22 +5,22 @@ import hexlet.code.Utils;
 public class Even {
 
     public static void run() {
-        var questions = new String [3][];
+        var questions = new String[3][];
         for (int i = 0; i < 3; i++) {
-            questions[i]= generateRound ();
+            questions[i] = generateRound();
         }
-        Engine.metod (questions, "Answer 'yes' if the number is even, otherwise answer 'no'.");
+        Engine.metod(questions, "Answer 'yes' if the number is even, otherwise answer 'no'.");
     }
 
-    public static String [] generateRound(){
+    public static String[] generateRound() {
         int minNumber = 1;
         int maxNamber = 10;
-        int number = Utils.getRandomint (minNumber,maxNamber);
-        var correctAnswer = isEven (number) ? "yes":"no";
-        return new String[]{String.valueOf (number), String.valueOf (correctAnswer)};
+        int number = Utils.getRandomint(minNumber, maxNamber);
+        var correctAnswer = isEven(number) ? "yes" : "no";
+        return new String[]{String.valueOf(number), String.valueOf(correctAnswer)};
     }
 
-    public static boolean isEven (int number){
-        return number%2==0;
+    public static boolean isEven(int number) {
+        return number % 2 == 0;
     }
 }
