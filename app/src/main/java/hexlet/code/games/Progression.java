@@ -22,7 +22,7 @@ public class Progression {
         String[] words = getStringMas(sequenceSize, firstNumber, step);
         String c = words[number];
         words[number]="..";
-        return new String[]{String.valueOf (Arrays.toString (words)), String.valueOf (c)};
+        return new String[]{String.join (" ",words), String.valueOf (c)};
     }
     
 public static String[] getStringMas (int sequenceSize, int firstNumber, int step){
