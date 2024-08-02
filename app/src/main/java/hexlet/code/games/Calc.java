@@ -4,23 +4,24 @@ import hexlet.code.Utils;
 import java.util.Scanner;
 
 public class Calc {
+
     public static void run() {
-        var questions = new String [3][];
+        var questions = new String[3][];
         for (int i = 0; i < 3; i++) {
-            questions[i]= generateRound ();
+            questions[i] = generateRound();
         }
-        Engine.metod (questions, "What is the result of the expression?");
+        Engine.metod(questions, "What is the result of the expression?");
     }
 
    public static String[] generateRound() {
-        int a = Utils.getRandomint (1, 10);
-        int b = Utils.getRandomint (1, 10);
+        int a = Utils.getRandomint(1, 10);
+        int b = Utils.getRandomint(1, 10);
         char[] myArray = new char[] {'-', '+', '*'};
-        String operand = String.valueOf (myArray[(Utils.getRandomint(0,myArray.length))]);
+        String operand = String.valueOf(myArray[(Utils.getRandomint(0, myArray.length))]);
 
-        String question = Integer.toString (a)+" "+operand+" "+Integer.toString (b);
-        String res = String.valueOf (generateOperations (a,b,operand));
-        return new String[]{String.valueOf (question), String.valueOf (res)};
+        String question = Integer.toString(a) + " " + operand + " " + Integer.toString(b);
+        String res = String.valueOf(generateOperations(a, b, operand));
+        return new String[] {String.valueOf(question), String.valueOf(res)};
     }
 
     public static int generateOperations(int one, int two, String operand) {
