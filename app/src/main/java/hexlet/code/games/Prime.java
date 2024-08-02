@@ -5,15 +5,18 @@ import hexlet.code.Utils;
 public class Prime {
 
     public static void run() {
-        var questions = new String[3][];
-        for (int i = 0; i < 3; i++) {
+        int numberOfRounds = 3;
+        var questions = new String[numberOfRounds][];
+        for (int i = 0; i < numberOfRounds; i++) {
             questions[i] = generateRound();
         }
         Engine.metod(questions, "Answer 'yes' if given number is prime. Otherwise answer 'no'.");
     }
 
     public static String[] generateRound() {
-        int number = Utils.getRandomint(1, 10);
+        int minNumber = 1;
+        int maxNumber = 10;
+        int number = Utils.getRandomint(minNumber, maxNumber);
         var correctAnswer = isSimple(number) ? "yes" : "no";
         return new String[]{String.valueOf(number), String.valueOf(correctAnswer)};
     }
