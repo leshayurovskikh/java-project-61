@@ -5,11 +5,11 @@ import hexlet.code.Utils;
 public class Prime {
 public static final int MIN_NUMBER = 1;
 public static final int MAX_NUMBER = 10;
+public static final int NUMBER_OF_ROUNDS = 3;     
 
     public static void run() {
-        int numberOfRounds = 3;
-        var questions = new String[numberOfRounds][];
-        for (int i = 0; i < numberOfRounds; i++) {
+        var questions = new String[NUMBER_OF_ROUNDS][];
+        for (int i = 0; i < NUMBER_OF_ROUNDS; i++) {
             questions[i] = generateRound();
         }
         Engine.metod(questions, "Answer 'yes' if given number is prime. Otherwise answer 'no'.");
