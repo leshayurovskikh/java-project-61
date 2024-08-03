@@ -26,15 +26,12 @@ public static final int NUMBER_OF_ROUNDS = 3;
     }
 
     public static int generateOperations(int one, int two, String operand) {
-        int result = 0;
-        switch (operand) {
-            case "+":
-                return result = one + two;
-            case "-":
-               return result = one - two;
-            case "*":
-                return result = one * two;
+       if (operand.equals("+")) {
+            return one + two;
+        } else if (operand.equals("-")) {
+            return one - two;
+        } else {
+            return one * two;
         }
-return result;
     }
 }
