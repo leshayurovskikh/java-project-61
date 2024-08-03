@@ -17,8 +17,8 @@ public static final int MIN = 1;
     }
 
    public static String[] generateRound() {
-        public final int step = 5;
-        public final int FIRSTNUMBER = 1;
+        public static final int step = 5;
+        public static final int FIRSTNUMBER = 1;
         int number = Utils.getRandomint(MIN, MAX);
         int sequenceSize = Utils.getRandomint(SEQMIN, SEQMAX);
         String[] words = getStringMas(sequenceSize, FIRSTNUMBER, step);
