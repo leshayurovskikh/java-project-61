@@ -5,7 +5,7 @@ import hexlet.code.Utils;
 public class Progression {
 public static final int NUMBEROFROUNDS = 3;
 public static final int FIRST_NUMBER = 1;
-const int step = 5;
+public static final int S = 0;
 public static final int SEQMIN = 5;
 public static final int SEQMAX = 10;
 public static final int MAX = 9;
@@ -21,18 +21,17 @@ public static final int MIN = 1;
 
    public static String[] generateRound() {
         int number = Utils.getRandomint(MIN, MAX);
-        int step = 5;
         int sequenceSize = Utils.getRandomint(SEQMIN, SEQMAX);
-        String[] words = getStringMas(sequenceSize, FIRST_NUMBER, step);
+        String[] words = getStringMas(sequenceSize, FIRST_NUMBER, S);
         String c = words[number];
         words[number] = "..";
         return new String[] {String.join(" ", words), String.valueOf(c)};
     }
 
-public static String[] getStringMas(int sequenceSize, int FIRST_NUMBER, int step) {
+public static String[] getStringMas(int sequenceSize, int FIRST_NUMBER, int S) {
     String[] array = new String[sequenceSize];
         for (int i = 0; i < array.length; i++) {
-        array[i] = Integer.toString(FIRST_NUMBER + step * i);
+        array[i] = Integer.toString(FIRST_NUMBER + S * i);
         }
         return array;
     }
