@@ -27,7 +27,7 @@ public static final int MIN = 1;
         return new String[] {String.join(" ", words), String.valueOf(c)};
     }
 
-public static String[] getStringMas(int sequenceSize, int FIRSTNUMBER, int S) {
+public static String[] getStringMas(int sequenceSize, int FIRSTNUMBER, int step) {
     String[] array = new String[sequenceSize];
         for (int i = 0; i < array.length; i++) {
         array[i] = Integer.toString(FIRSTNUMBER + step * i);
