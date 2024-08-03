@@ -5,7 +5,7 @@ import hexlet.code.Utils;
 public class Progression {
 public static final int NUMBEROFROUNDS = 3;
 public static final int FIRST_NUMBER = 1;
-public static final int S = 0;
+public static final int S = 5;
 public static final int SEQMIN = 5;
 public static final int SEQMAX = 10;
 public static final int MAX = 9;
