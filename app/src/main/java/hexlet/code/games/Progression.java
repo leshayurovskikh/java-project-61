@@ -20,7 +20,7 @@ public static final int MIN = 1;
     }
 
    public static String[] generateRound() {
-        int number = Utils.getRandomint(MIN, MAX);
+        int number = Utils.getRandomint(SEQMIN, SEQMAX);
         int sequenceSize = Utils.getRandomint(SEQMIN, SEQMAX);
         String[] words = getStringMas(sequenceSize, FIRST_NUMBER, S);
         String c = words[number];
