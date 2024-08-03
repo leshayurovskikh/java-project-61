@@ -5,7 +5,7 @@ import hexlet.code.Utils;
 public class Gcd {
 public static final int NUMBER_OF_ROUNDS = 3;
 public static final int MIN_NUMBER = 1;
-public static final int MAX_NUMBER = 10; 
+public static final int MAX_NUMBER = 10;
     public static void run() {
         var questions = new String[NUMBER_OF_ROUNDS][];
         for (int i = 0; i < NUMBER_OF_ROUNDS; i++) {
