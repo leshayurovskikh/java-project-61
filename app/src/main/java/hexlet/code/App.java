@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
+    final int cli = 1;
     final int even = 2;
     final int calc = 3;
     final int gcd = 4;
@@ -20,7 +21,7 @@ public class App {
         int command = scanner.nextInt();
 
         switch (command) {
-            case 1:
+            case cli:
                 System.out.println("Your choice: 1");
                 Cli.next();
                 break;
