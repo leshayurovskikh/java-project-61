@@ -8,7 +8,7 @@ public static final int MAX_NUMBER = 10;
 public static final int NUMBER_OF_ROUNDS = 3;
     public static void run() {
         var questions = new String[NUMBER_OF_ROUNDS][];
-        for (int i = 0; i < NUMBER_OF_ROUNDS, i++) {
+        for (int i = 0; i < NUMBER_OF_ROUNDS; i++) {
             questions[i] = generateRound();
         }
         Engine.metod(questions, "What is the result of the expression?");
