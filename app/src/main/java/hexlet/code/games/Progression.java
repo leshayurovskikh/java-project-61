@@ -34,3 +34,4 @@ public static String[] getStringMas(int sequenceSize, int FIRST_NUMBER, int STEP
         }
         return array;
     }
+}
