@@ -7,7 +7,7 @@ public static final int NUMBEROFROUNDS = 3;
 public static final int FIRST_NUMBER = 1;
 public static final int SEQMIN = 5;
 public static final int SEQMAX = 10;
-public static final int MAX = 5;
+public static final int MAX = 10;
 public static final int MIN = 1;
 
     public static void run() {
