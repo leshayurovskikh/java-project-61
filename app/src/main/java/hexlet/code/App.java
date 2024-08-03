@@ -4,7 +4,11 @@ import hexlet.code.games.*;
 import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
-
+    final int even = 2;
+    final int calc = 3;
+    final int gcd = 4;
+    final int progression = 5;
+    final int prime = 6;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter the game number and press Enter.");
         printMenu();
@@ -15,23 +19,23 @@ public class App {
                 System.out.println("Your choice: 1");
                 Cli.next();
                 break;
-            case 2:
+            case even:
                 System.out.println("Your choice: 2");
                 Even.run();
                 break;
-            case 3:
+            case calc:
                 System.out.println("Your choice: 3");
                 Calc.run();
                 break;
-            case 4:
+            case gcd:
                 System.out.println("Your choice: 4");
                 Gcd.run();
                 break;
-            case 5:
+            case progression:
                 System.out.println("Your choice: 5");
                 Progression.run();
                 break;
-            case 6:
+            case prime:
                 System.out.println("Your choice: 6");
                 Prime.run();
                 break;
