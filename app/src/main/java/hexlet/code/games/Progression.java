@@ -4,8 +4,6 @@ import hexlet.code.Utils;
 
 public class Progression {
 public static final int NUMBEROFROUNDS = 3;
-public static final int FIRSTNUMBER = 1;
-public static final int step = 5;
 public static final int SEQMIN = 5;
 public static final int SEQMAX = 10;
 public static final int MAX = 5;
@@ -19,6 +17,8 @@ public static final int MIN = 1;
     }
 
    public static String[] generateRound() {
+        public final int step = 5;
+        public final int FIRSTNUMBER = 1;
         int number = Utils.getRandomint(MIN, MAX);
         int sequenceSize = Utils.getRandomint(SEQMIN, SEQMAX);
         String[] words = getStringMas(sequenceSize, FIRSTNUMBER, step);
